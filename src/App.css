@@ -7,10 +7,12 @@
 }
 
 .ProfilePicture {
+  position: relative;
   width: 225px;
   height: 225px;
   border: 1px solid black;
   background: #d9dbda;
   border-radius: 100%;
   margin-left: 10px;
+  margin-top:10px;
 }
