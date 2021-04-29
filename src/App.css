@@ -1,0 +1,15 @@
+.App {
+  background: #d9dbda;
+  margin: auto;
+  height: 720px;
+  width: 70%;
+}
+
+.ProfilePicture {
+  width: 350px;
+  height: 350px;
+  border: 1px solid black;
+  background: #d9dbda;
+  border-radius: 100%;
+  margin-left: 10px;
+}

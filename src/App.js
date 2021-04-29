@@ -1,9 +1,12 @@
 import './App.css';
+import ProfilePicture from '../src/Components/ProfilePicture/ProfilePicture'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <div className="ProfilePicture">
+        <ProfilePicture/>
+      </div>
     </div>
   );
 }
