@@ -1,7 +1,6 @@
 img {
   border-radius: 100%;
-  width: 350px;
-  display: block;
+  width: 225px;
 }
 
 input[type="file"] {
@@ -9,18 +8,9 @@ input[type="file"] {
 }
 
 label{
-  border-radius: 600%;
-  background-color: black;
   color: white;
-  margin: auto;
-  margin-top: 10px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+button {
+  background-color: aqua;
 }

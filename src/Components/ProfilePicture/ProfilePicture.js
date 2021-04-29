@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ProfilePicture.css';
+import Button from '@material-ui/core/Button'
 
 const ProfilePicture = () => {
   const cloudinary_url = 'https://api.cloudinary.com/v1_1/fndme/image/upload'
@@ -31,7 +32,9 @@ const ProfilePicture = () => {
         onChange={uploadImage}
       />
       {loading ? ( <h3>Loading...</h3>) : ( <img src={image} alt="" />)}
-      <label htmlFor="file">Add Profile Picture</label>
+      <Button style = {{marginLeft:"20px", backgroundColor:"#777777"}} variant="contained">
+        <label htmlFor="file">Add Profile Picture</label>
+      </Button>
     </div>
   )
 }

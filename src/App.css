@@ -2,12 +2,13 @@
   background: #d9dbda;
   margin: auto;
   height: 720px;
-  width: 70%;
+  width: 100%;
+  border: 1px solid black;
 }
 
 .ProfilePicture {
-  width: 350px;
-  height: 350px;
+  width: 225px;
+  height: 225px;
   border: 1px solid black;
   background: #d9dbda;
   border-radius: 100%;
