@@ -1,5 +1,6 @@
 import './App.css';
 import ProfilePicture from '../src/Components/ProfilePicture/ProfilePicture'
+import Description from '../src/Components/Description/Description'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div className="ProfilePicture">
         <ProfilePicture/>
       </div>
+      <Description className="Description"/>
     </div>
   );
 }
