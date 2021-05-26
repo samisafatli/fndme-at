@@ -8,7 +8,9 @@ function App() {
       <div className="ProfilePicture">
         <ProfilePicture/>
       </div>
-      <Description className="Description"/>
+      <div style={{width: "225px", marginLeft:"10px", marginTop:"70px"}}>
+        <Description className="Description"/>
+      </div>
     </div>
   );
 }
