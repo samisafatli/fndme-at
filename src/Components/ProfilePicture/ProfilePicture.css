@@ -10,3 +10,16 @@ input[type="file"] {
 label{
   color: white;
 }
+
+.loading-label{
+  position: absolute;
+  top:85px; 
+  left:70px
+}
+
+.btn {
+  background-color:#777777;
+  position: absolute; 
+  top:230px; 
+  left:15px;
+}
