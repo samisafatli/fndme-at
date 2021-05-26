@@ -1,7 +1,7 @@
 import React from "react";
 import {MegadraftEditor, editorStateFromRaw, EditorState} from "megadraft";
 import 'megadraft/dist/css/megadraft.css'
-import './Description.css'
+
 
 const MAX_LENGTH = 262
 
