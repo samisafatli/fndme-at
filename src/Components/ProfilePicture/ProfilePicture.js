@@ -31,8 +31,10 @@ const ProfilePicture = () => {
         name="file"
         onChange={uploadImage}
       />
-      {loading ? ( <h3 style={{position: "absolute", top:"85px", left:"70px"}}>Loading...</h3>) : ( <img src={image} alt="" />)}
-      <Button style = {{backgroundColor:"#777777", position: "absolute", top:"230px", left:"15px"}} variant="contained">
+      {loading ? (<h3 className="loading-label">Loading...</h3>) :
+       ( <img src={image} alt="" />)
+      }
+      <Button className="btn" variant="contained">
         <label htmlFor="file">Add Profile Picture</label>
       </Button>
     </div>
