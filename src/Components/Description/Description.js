@@ -1,9 +1,15 @@
 import React from "react";
 import {MegadraftEditor, editorStateFromRaw, EditorState} from "megadraft";
 import 'megadraft/dist/css/megadraft.css'
-
+import icons from 'megadraft/lib/icons'
 
 const MAX_LENGTH = 262
+
+const customActions = [
+  { type: "inline", label: "B", style: "BOLD", icon: icons.BoldIcon },
+  { type: "inline", label: "I", style: "ITALIC", icon: icons.ItalicIcon },
+  { type: "entity", label: "Link", style: "link", entity: "LINK", icon: icons.LinkIcon },
+]
 
 class Description extends React.Component {
   constructor(props) {
@@ -23,6 +29,7 @@ class Description extends React.Component {
           onChange={this.onChange}
           placeholder='Add your Description'
           sidebarRendererFn={{}}
+          actions={customActions}
           modalOptions={{width:225, height:310}}
           handleBeforeInput={this._handleBeforeInput}
           handlePastedText={this._handlePastedText}/>
