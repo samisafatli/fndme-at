@@ -2,7 +2,7 @@
   background: #d9dbda;
   margin: auto;
   margin-top: 30px;
-  height: 720px;
+  height: 640px;
   width: 95%;
   border: 1px solid black;
   position: relative;
@@ -35,4 +35,14 @@
   border: 1px solid black;
   left: 300px;
   top: 10px;
+}
+
+.Education {
+  position: absolute;
+  width: 900px;
+  height: 150px;
+  margin: auto;
+  border: 1px solid black;
+  left: 300px;
+  top: 450px;
 }
