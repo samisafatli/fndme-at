@@ -9,10 +9,10 @@ function App() {
         <ProfilePicture/>
       </div>
       <div className="Description">
-        <Editor placeholder="Add your Description"/>
+        <Editor limit={262}placeholder="Add your Description"/>
       </div>
       <div className="Experience">
-        <Editor placeholder="Add your Experience"/>
+        <Editor limit={1384} placeholder="Add your Experience"/>
       </div>
     </div>
   );

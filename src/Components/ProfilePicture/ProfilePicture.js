@@ -24,7 +24,8 @@ const ProfilePicture = () => {
   }
 
   return (
-    <div>
+   <div>
+   <div style={{position: 'absolute'}}>
       <input
         id="file"
         type="file"
@@ -34,10 +35,11 @@ const ProfilePicture = () => {
       {loading ? (<h3 className="loading-label">Loading...</h3>) :
        ( <img src={image} alt="" />)
       }
-      <Button className="btn" variant="contained">
-        <label htmlFor="file">Add Profile Picture</label>
-      </Button>
     </div>
+    <Button className="btn" variant="contained">
+    <label htmlFor="file">Add Profile Picture</label>
+  </Button>
+  </div>
   )
 }
 

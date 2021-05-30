@@ -3,7 +3,7 @@ import {MegadraftEditor, editorStateFromRaw, EditorState} from "megadraft";
 import 'megadraft/dist/css/megadraft.css'
 import icons from 'megadraft/lib/icons'
 
-const MAX_LENGTH = 262
+// const MAX_LENGTH = 262
 
 const customActions = [
   { type: "inline", label: "B", style: "BOLD", icon: icons.BoldIcon },
@@ -15,6 +15,7 @@ class Editor extends React.Component {
   constructor(props) {
     super(props)
     this.placeholder = props.placeholder
+    this.limit = props.limit
     this.state = {editorState: editorStateFromRaw(null)}
   }
 
@@ -80,7 +81,7 @@ class Editor extends React.Component {
     const currentContent = this.state.editorState.getCurrentContent();
     const currentContentLength = currentContent.getPlainText('').length;
     const selectedTextLength = this._getLengthOfSelectedText();
-    if (currentContentLength - selectedTextLength > MAX_LENGTH - 1) return 'handled'
+    if (currentContentLength - selectedTextLength > this.limit - 1) return 'handled'
   }
 
   _handlePastedText = (pastedText) => {
@@ -88,7 +89,7 @@ class Editor extends React.Component {
     const currentContentLength = currentContent.getPlainText('').length;
     const selectedTextLength = this._getLengthOfSelectedText();
 
-    if (currentContentLength + pastedText.length - selectedTextLength > MAX_LENGTH) return 'handled'
+    if (currentContentLength + pastedText.length - selectedTextLength > this.limit) return 'handled'
   }
 }
 
