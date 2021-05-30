@@ -1,8 +1,9 @@
 .App {
   background: #d9dbda;
   margin: auto;
+  margin-top: 30px;
   height: 720px;
-  width: 100%;
+  width: 95%;
   border: 1px solid black;
   position: relative;
 }
@@ -27,7 +28,11 @@
 }
 
 .Experience {
-  width: 600px;
+  position: absolute;
+  width: 900px;
+  height: 400px;
   margin: auto;
   border: 1px solid black;
+  left: 300px;
+  top: 10px;
 }
