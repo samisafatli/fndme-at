@@ -11,9 +11,10 @@ const customActions = [
   { type: "entity", label: "Link", style: "link", entity: "LINK", icon: icons.LinkIcon },
 ]
 
-class Description extends React.Component {
+class Editor extends React.Component {
   constructor(props) {
     super(props)
+    this.placeholder = props.placeholder
     this.state = {editorState: editorStateFromRaw(null)}
   }
 
@@ -23,12 +24,12 @@ class Description extends React.Component {
 
   render() {
     return (
-      <div className="Description" style={{height:310, border:"1px solid black", width:225}}>
+      <div>
         <MegadraftEditor
           editorState={this.state.editorState}
           onChange={this.onChange}
-          placeholder='Add your Description'
-          sidebarRendererFn={{}}
+          placeholder={this.placeholder}
+          sidebarRendererFn={() => {}}
           actions={customActions}
           modalOptions={{width:225, height:310}}
           handleBeforeInput={this._handleBeforeInput}
@@ -91,4 +92,4 @@ class Description extends React.Component {
   }
 }
 
-export default Description
+export default Editor
